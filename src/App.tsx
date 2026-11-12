@@ -66,41 +66,37 @@ function PreSaleTopBar({ timeLeft }: { timeLeft: TimeLeft }) {
           </span>
         </div>
 
-        {/* Cronômetro */}
-        <div className="flex items-center gap-1 sm:gap-1.5 font-sans">
-          {/* Dias */}
-          <div className="flex flex-col items-center">
-            <span className="bg-[#04091a] text-[#fbbf24] font-black text-xs sm:text-sm md:text-base px-1.5 sm:px-2 py-0.5 rounded-md border border-[#fbbf24]/70 shadow-[1px_1px_0px_#000] min-w-[26px] sm:min-w-[32px] text-center font-mono">
+        {/* Cronômetro Clean em Branco */}
+        <div className="flex items-center gap-1.5 sm:gap-2.5 text-white font-black text-sm sm:text-base md:text-lg tracking-wide drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]">
+          <div className="flex items-baseline gap-0.5">
+            <span className="tabular-nums text-white text-base sm:text-lg md:text-xl font-black">
               {String(timeLeft.days).padStart(2, '0')}
             </span>
-            <span className="text-[8px] sm:text-[9px] text-[#fef08a] font-bold uppercase tracking-tight -mt-0.5">dias</span>
+            <span className="text-[10px] sm:text-xs font-bold text-white/80 uppercase">d</span>
           </div>
-          <span className="text-[#fef08a] font-black text-xs sm:text-sm pb-1.5">:</span>
+          <span className="text-white/50 text-xs sm:text-sm font-bold">:</span>
 
-          {/* Horas */}
-          <div className="flex flex-col items-center">
-            <span className="bg-[#04091a] text-[#fbbf24] font-black text-xs sm:text-sm md:text-base px-1.5 sm:px-2 py-0.5 rounded-md border border-[#fbbf24]/70 shadow-[1px_1px_0px_#000] min-w-[26px] sm:min-w-[32px] text-center font-mono">
+          <div className="flex items-baseline gap-0.5">
+            <span className="tabular-nums text-white text-base sm:text-lg md:text-xl font-black">
               {String(timeLeft.hours).padStart(2, '0')}
             </span>
-            <span className="text-[8px] sm:text-[9px] text-[#fef08a] font-bold uppercase tracking-tight -mt-0.5">hrs</span>
+            <span className="text-[10px] sm:text-xs font-bold text-white/80 uppercase">h</span>
           </div>
-          <span className="text-[#fef08a] font-black text-xs sm:text-sm pb-1.5">:</span>
+          <span className="text-white/50 text-xs sm:text-sm font-bold">:</span>
 
-          {/* Minutos */}
-          <div className="flex flex-col items-center">
-            <span className="bg-[#04091a] text-[#fbbf24] font-black text-xs sm:text-sm md:text-base px-1.5 sm:px-2 py-0.5 rounded-md border border-[#fbbf24]/70 shadow-[1px_1px_0px_#000] min-w-[26px] sm:min-w-[32px] text-center font-mono">
+          <div className="flex items-baseline gap-0.5">
+            <span className="tabular-nums text-white text-base sm:text-lg md:text-xl font-black">
               {String(timeLeft.minutes).padStart(2, '0')}
             </span>
-            <span className="text-[8px] sm:text-[9px] text-[#fef08a] font-bold uppercase tracking-tight -mt-0.5">min</span>
+            <span className="text-[10px] sm:text-xs font-bold text-white/80 uppercase">m</span>
           </div>
-          <span className="text-[#fef08a] font-black text-xs sm:text-sm pb-1.5">:</span>
+          <span className="text-white/50 text-xs sm:text-sm font-bold">:</span>
 
-          {/* Segundos */}
-          <div className="flex flex-col items-center">
-            <span className="bg-[#04091a] text-[#ff4d58] font-black text-xs sm:text-sm md:text-base px-1.5 sm:px-2 py-0.5 rounded-md border border-[#ff4d58]/70 shadow-[1px_1px_0px_#000] min-w-[26px] sm:min-w-[32px] text-center font-mono animate-pulse">
+          <div className="flex items-baseline gap-0.5">
+            <span className="tabular-nums text-white text-base sm:text-lg md:text-xl font-black">
               {String(timeLeft.seconds).padStart(2, '0')}
             </span>
-            <span className="text-[8px] sm:text-[9px] text-[#fef08a] font-bold uppercase tracking-tight -mt-0.5">seg</span>
+            <span className="text-[10px] sm:text-xs font-bold text-white/80 uppercase">s</span>
           </div>
         </div>
 
